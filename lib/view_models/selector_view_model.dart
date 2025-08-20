@@ -27,14 +27,8 @@ class SelectorViewModel extends ChangeNotifier {
   String? _selectedCountryId;
   String? get selectedCountryId => _selectedCountryId;
 
-  String? _selectedCountryName;
-  String? get selectedCountryName => _selectedCountryName;
-
   String? _selectedStateId;
   String? get selectedStateId => _selectedStateId;
-
-  Country? get selectedCountry =>
-      _countries.firstWhereOrNull((c) => c.id == _selectedCountryId);
 
   StateModel? get selectedState =>
       _states.firstWhereOrNull((s) => s.id == _selectedStateId);
